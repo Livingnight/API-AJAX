@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Major Gif Action</title>
+</head>
+<body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+<span class="glyphicon glyphicon-envelope"></span>
+<div class="container col-lg-10 jumbotron"><h1>Gif Headquarters!</h1></div>
+    <div class="row">
+            <div class="col-lg-10 container buttons"></div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 container gifs"></div>
+        <div class="col-lg-4 container search">
+            <div class="card">
+                <div class="card-header">Gif Search</div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="gifSearch">Add something to search for</label>
+                            <input type="text" class="form-control" id="gifSearch" placeholder="Search for your dreams!">
+                        </div>
+                        <button type="submit" onsubmit="return false" class="btn btn-primary" id="searchBtn"><span class="glyphicon glyphicon-search"></span> Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="assets/javascript/logic.js"></script>
+</body>
+</html>
