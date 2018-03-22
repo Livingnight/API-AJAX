@@ -22,16 +22,23 @@ $(document).ready(function(){
         var searchText = btnDiv.val();
         console.log(searchText);
         //empties every time before making all the buttons again including new one
-        gifDiv.empty();
+        // gifDiv.empty();
 
         if (ajaxBtns.includes(searchText)){
             // alert("You've already made that button"
+            btnDiv.val('');
             return;
         }else{
             ajaxBtns.push(searchText);
             console.log(ajaxBtns);
 
-            buttons();
+            var txt = $("<button class='btn btn-danger query'>");
+            txt = txt.attr("data-gif", searchText);
+            console.log("" + searchText);
+            txt = txt.text("" + searchText);
+            btn.append(txt);
+            btnDiv.val('');
+            // btn.append(buttons);
         }
 
 
@@ -49,19 +56,20 @@ $(document).ready(function(){
          }).then(function(response){
              console.log(response);
              var gifData = response.data;
+             gifDiv.empty();
             for(var i=0; i<gifData.length; i++){
                  //console logs for different values needed
                  console.log(gifData[i].images.fixed_height_still.url);
                  console.log(gifData[i].rating);
             //   making an img div to place
-                var div = $("<div class='divs'>");
+                var div = $("<div class='well calledGifs'>");
                 var img = $("<img>");
                 img = img.addClass("image");
                 img = img.attr("data-still", gifData[i].images.fixed_height_still.url);
                 img = img.attr("data-animate", gifData[i].images.fixed_height.url);
                 img = img.attr("data-state", "still");
                 img = img.attr("src", gifData[i].images.fixed_height_still.url);
-                div.append("Rating: " + gifData[i].rating);
+                div.append($("<div>").html("<p>Rating: " + gifData[i].rating + "</p>"));
                 div.append(img);
                 // gifDiv.append("Rating: " + gifData[i].rating);
                 gifDiv.append(div);

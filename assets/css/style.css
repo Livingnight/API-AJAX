@@ -1,13 +1,23 @@
-.btn{
+.btn {
     margin-right: 5px;
 }
-.buttons{
+
+.buttons {
     margin-bottom: 30px;
     text-align: center;
 }
-.jumbotron{
+
+.jumbotron {
     text-align: center;
+    background: darkred url("../images/giphyseriesc.gif") center;
 }
-.divs{
+.calledGifs {
     float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
 }
