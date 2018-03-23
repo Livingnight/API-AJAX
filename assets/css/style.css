@@ -16,11 +16,10 @@
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
-    border: 2px solid blue;
-    background: yellow;
+    /*border: 2px solid blue;*/
+    /*background: yellow;*/
 }
 
-img {
-    width: 300px;
-    height: 200px;
-}
+/*img {*/
+    /*width: auto;*/
+/*}*/
