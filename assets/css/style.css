@@ -1,5 +1,6 @@
 .btn {
     margin-right: 5px;
+    background-color: darkred;
 }
 
 .buttons {
@@ -9,12 +10,14 @@
 
 .jumbotron {
     text-align: center;
-    background: darkred url("../images/giphyseriesc.gif") center;
+    background: darkred;
 }
 .calledGifs {
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
+    border: 2px solid blue;
+    background: yellow;
 }
 
 img {
