@@ -62,7 +62,7 @@ $(document).ready(function(){
                  console.log(gifData[i].images.fixed_height_still.url);
                  console.log(gifData[i].rating);
             //   making an img div to place
-                var div = $("<div class='calledGifs col-lg-3'>");
+                var div = $("<div class='calledGifs'>");
                 var img = $("<img>");
                 img = img.addClass("image");
                 img = img.attr("data-still", gifData[i].images.fixed_height_still.url);
